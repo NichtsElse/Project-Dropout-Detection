@@ -122,10 +122,9 @@ with tab5:
     col1, col2 = st.columns(2)
     with col1:
         s2_enrolled = st.number_input("Curricular Units 2nd Sem Enrolled (SKS Diambil)", value=6, min_value=0)
-        s2_eval = st.number_input("Curricular Units 2nd Sem Evaluations (Evaluasi Diikuti)", value=6, min_value=0)
-        s2_no_eval = st.number_input("Curricular Units 2nd Sem Without Eval (Tanpa Evaluasi)", value=0, min_value=0)
-    with col2:
         s2_approved = st.number_input("Curricular Units 2nd Sem Approved (SKS Lulus)", value=5, min_value=0)
+    with col2:
+
         s2_grade = st.number_input("Curricular Units 2nd Sem Grade (Rata-rata Nilai/IP)", value=12.0, step=0.1, min_value=0.0)
 
 st.markdown("---")
