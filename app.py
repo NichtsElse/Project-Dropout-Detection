@@ -131,26 +131,26 @@ st.markdown("---")
 
 # 6. Tombol Proses & Logika Prediksi
 if st.button("📊 Proses Prediksi", use_container_width=True):
-    # Menyusun data sesuai dengan urutan fitur yang diminta model
+    # Menyusun data sesuai dengan nama kolom yang diminta oleh model .pkl
     input_features = {
-        'Age_at_enrollment': age,
+        'Age at enrollment': age,
         'Debtor': debtor,
         'Gender': gender,
-        'Application_mode': app_mode,
-        'Curricular_units_2nd_sem_without_evaluations': s2_no_eval,
-        'Marital_status': marital,
-        'Previous_qualification_grade': prev_grade,
-        'Curricular_units_2nd_sem_evaluations': s2_eval,
+        'Application mode': app_mode,
+        'Curricular units 2nd sem (without evaluations)': s2_no_eval,
+        'Marital status': marital,
+        'Previous qualification (grade)': prev_grade,
+        'Curricular units 2nd sem (evaluations)': s2_eval,
         'Displaced': displaced,
-        'Admission_grade': adm_grade,
-        'Curricular_units_1st_sem_enrolled': s1_enrolled,
-        'Curricular_units_2nd_sem_enrolled': s2_enrolled,
-        'Scholarship_holder': scholarship,
-        'Tuition_fees_up_to_date': tuition,
-        'Curricular_units_1st_sem_grade': s1_grade,
-        'Curricular_units_1st_sem_approved': s1_approved,
-        'Curricular_units_2nd_sem_grade': s2_grade,
-        'Curricular_units_2nd_sem_approved': s2_approved
+        'Admission grade': adm_grade,
+        'Curricular units 1st sem (enrolled)': s1_enrolled,
+        'Curricular units 2nd sem (enrolled)': s2_enrolled,
+        'Scholarship holder': scholarship,
+        'Tuition fees up to date': tuition,
+        'Curricular units 1st sem (grade)': s1_grade,
+        'Curricular units 1st sem (approved)': s1_approved,
+        'Curricular units 2nd sem (grade)': s2_grade,
+        'Curricular units 2nd sem (approved)': s2_approved
     }
     
     df_input = pd.DataFrame([input_features])
